@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="test__simple__interface_8c" kind="file" language="C++">
+    <compoundname>test_simple_interface.c</compoundname>
+    <includes local="no">assert.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="yes">Camadas/interface/interface.h</includes>
+    <includes local="yes">Camadas/logica/logica.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2">
+        <label>assert.h</label>
+      </node>
+      <node id="6">
+        <label>Camadas/logica/logica.h</label>
+      </node>
+      <node id="5">
+        <label>Camadas/interface/interface.h</label>
+      </node>
+      <node id="1">
+        <label>LA1PL2G01/projeto/testes/test_simple_interface.c</label>
+        <link refid="test__simple__interface_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test__simple__interface_8c_1af65d33ddceff71fb137b6b1dcf77aa83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void interface_winner_is_player1</definition>
+        <argsstring>()</argsstring>
+        <name>interface_winner_is_player1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/testes/test_simple_interface.c" line="7" column="6" bodyfile="LA1PL2G01/projeto/testes/test_simple_interface.c" bodystart="7" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="test__simple__interface_8c_1a06ef838d09e6c3087a1ef24a0d3e048f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_simple_interface</definition>
+        <argsstring>()</argsstring>
+        <name>test_simple_interface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/testes/test_simple_interface.c" line="10" column="5" bodyfile="LA1PL2G01/projeto/testes/test_simple_interface.c" bodystart="10" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camadas/interface/interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camadas/logica/logica.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="test__simple__interface_8c_1af65d33ddceff71fb137b6b1dcf77aa83" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test__simple__interface_8c_1af65d33ddceff71fb137b6b1dcf77aa83" kindref="member">interface_winner_is_player1</ref>(){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="test__simple__interface_8h_1a06ef838d09e6c3087a1ef24a0d3e048f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="test__simple__interface_8c_1a06ef838d09e6c3087a1ef24a0d3e048f" kindref="member">test_simple_interface</ref>(){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="LA1PL2G01/projeto/testes/test_simple_interface.c"/>
+  </compounddef>
+</doxygen>

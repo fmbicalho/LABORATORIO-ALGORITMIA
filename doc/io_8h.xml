@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="io_8h" kind="file" language="C++">
+    <compoundname>io.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="yes">Camadas/dados/dados.h</includes>
+    <includes local="yes">Camadas/logica/logica.h</includes>
+    <includes local="yes">Camadas/logica/auxiliares.h</includes>
+    <includedby refid="io_8c" local="yes">LA1PL2G01/projeto/interface/io.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Camadas/logica/logica.h</label>
+      </node>
+      <node id="1">
+        <label>LA1PL2G01/projeto/interface/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Camadas/logica/auxiliares.h</label>
+      </node>
+      <node id="3">
+        <label>Camadas/dados/dados.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>LA1PL2G01/projeto/interface/io.c</label>
+        <link refid="io_8c"/>
+      </node>
+      <node id="1">
+        <label>LA1PL2G01/projeto/interface/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__sub2_alpha1_1ga23a23b7826b87285db7e15c4bdbd7897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr</definition>
+        <argsstring>(ESTADO *e, char *file_path)</argsstring>
+        <name>gr</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>file_path</declname>
+        </param>
+        <briefdescription>
+<para>Função deve gravar em um ficheiro o tabuleiro com as jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o nome do ficheiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/interface/io.h" line="15" column="6" bodyfile="LA1PL2G01/bot/ioBot.c" bodystart="6" bodyend="13" declfile="LA1PL2G01/projeto/interface/io.h" declline="15" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub2_alpha1_1gab184b82fd763449103d10b56b797c537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler</definition>
+        <argsstring>(ESTADO *e, char *filename)</argsstring>
+        <name>ler</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Função deve ler o ficheiro de um tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o nome do ficheiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/interface/io.h" line="21" column="6" bodyfile="LA1PL2G01/bot/ioBot.c" bodystart="15" bodyend="44" declfile="LA1PL2G01/projeto/interface/io.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contém declarações e comentários para documentação das funções em <ref refid="io_8c" kindref="compound">io.c</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RASTROS_IO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_IO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camadas/dados/dados.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camadas/logica/logica.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camadas/logica/auxiliares.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__sub2_alpha1_1ga23a23b7826b87285db7e15c4bdbd7897" kindref="member">gr</ref><sp/>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_path);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__sub2_alpha1_1gab184b82fd763449103d10b56b797c537" kindref="member">ler</ref><sp/>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_IO_H</highlight></codeline>
+    </programlisting>
+    <location file="LA1PL2G01/projeto/interface/io.h"/>
+  </compounddef>
+</doxygen>
