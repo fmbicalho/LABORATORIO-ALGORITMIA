@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="acessar__estado_8h" kind="file" language="C++">
+    <compoundname>acessar_estado.h</compoundname>
+    <includes refid="projeto_2dados_2dados_8h" local="yes">dados.h</includes>
+    <includedby refid="acessar__estado_8c" local="yes">LA1PL2G01/projeto/dados/acessar_estado.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>dados.h</label>
+        <link refid="projeto_2dados_2dados_8h"/>
+      </node>
+      <node id="1">
+        <label>LA1PL2G01/projeto/dados/acessar_estado.h</label>
+        <link refid="acessar__estado_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>LA1PL2G01/projeto/dados/acessar_estado.c</label>
+        <link refid="acessar__estado_8c"/>
+      </node>
+      <node id="1">
+        <label>LA1PL2G01/projeto/dados/acessar_estado.h</label>
+        <link refid="acessar__estado_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__sub_alpha2_1ga3db658c95db4d69986c78b16a7c6aa45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_casa</definition>
+        <argsstring>(ESTADO *e, int row, int col)</argsstring>
+        <name>obter_casa</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+<para>Obtêm a estado de uma casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>está no intervalo de 0 a 7 e corresponde as linhas do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>está no intervalo de 0 a 7 e corresponde as colunas do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>o estado da casa (VAZIO, UM, DOIS, PRETA, BRANCA equivalente a &apos;.&apos;, &apos;1&apos;, &apos;2&apos;, &apos;#&apos;, &apos;*&apos;) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/dados/acessar_estado.h" line="14" column="5" bodyfile="LA1PL2G01/bot/acessar_estadoBot.c" bodystart="6" bodyend="8" declfile="LA1PL2G01/projeto/dados/acessar_estado.h" declline="14" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub_alpha2_1ga996b7cbab9689ba24980590d140ef7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int JogadorAtual</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>JogadorAtual</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Obtêm o número do jogador atual. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>o número do jogador no momento em que a função foi executada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/dados/acessar_estado.h" line="20" column="5" bodyfile="LA1PL2G01/bot/acessar_estadoBot.c" bodystart="19" bodyend="21" declfile="LA1PL2G01/projeto/dados/acessar_estado.h" declline="20" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub_alpha2_1ga5ba7758412b57f34f490ee46645e98cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_subcoordenadas</definition>
+        <argsstring>(ESTADO *e, int jogada, int jogador, int info)</argsstring>
+        <name>obter_subcoordenadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jogada</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jogador</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Obtem a coordenada de uma linha ou coluna. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Fornecendo o número da jogada e o número da jogado devolve a int da coluna ou linha depenendo se int info == COLUNA <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jogada</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é a jogada em questão </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jogador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o número do jogador da qual a linha ou coluna está a ser requisatada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>determina se será a coluna ou linha que será devolvida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>coluna ou linha </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/dados/acessar_estado.h" line="30" column="5" bodyfile="LA1PL2G01/bot/acessar_estadoBot.c" bodystart="10" bodyend="17" declfile="LA1PL2G01/projeto/dados/acessar_estado.h" declline="30" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub_alpha2_1ga8c8c063a176d50b62eed70a24b79197d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NumJogadas</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>NumJogadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Obtem número de jogadas feitas até o momento da execução da função. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>o número de jogadas do tabuleiro e </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/dados/acessar_estado.h" line="36" column="5" bodyfile="LA1PL2G01/bot/acessar_estadoBot.c" bodystart="23" bodyend="25" declfile="LA1PL2G01/projeto/dados/acessar_estado.h" declline="36" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub_alpha2_1ga86f898b1ea1b15a6353dd16e9e6d78cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA obter_ultimajogada</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>obter_ultimajogada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Devolve a coordenada da última jogada salva no estado do tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>coordenada da última jogada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/dados/acessar_estado.h" line="42" column="12" bodyfile="LA1PL2G01/bot/acessar_estadoBot.c" bodystart="27" bodyend="29" declfile="LA1PL2G01/projeto/dados/acessar_estado.h" declline="42" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub_alpha2_1gaa1acb9ab56a9997c82130721e58192ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA obter_coordenada</definition>
+        <argsstring>(ESTADO *e, int jogada, int jogador)</argsstring>
+        <name>obter_coordenada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jogada</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jogador</declname>
+        </param>
+        <briefdescription>
+<para>Deve fornecer a coordenada do movimento de um jogador em uma jogada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jogada</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>especifica de qual jogada iremos buscar a coordenada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jogador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>especifica de qual jogador será requisatada a coordenada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>coordenada que o jogador 1 ou 2 fez em uma jogada x. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/dados/acessar_estado.h" line="50" column="12" bodyfile="LA1PL2G01/projeto/dados/acessar_estado.c" bodystart="31" bodyend="36" declfile="LA1PL2G01/projeto/dados/acessar_estado.h" declline="50" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Nesse aqurivo estão declaradas e comentadas para documentação as funções em <ref refid="acessar__estado_8c" kindref="compound">acessar_estado.c</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RASTROS_C_ACESSAR_ESTADO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_C_ACESSAR_ESTADO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="projeto_2dados_2dados_8h" kindref="compound">dados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__sub_alpha2_1ga3db658c95db4d69986c78b16a7c6aa45" kindref="member">obter_casa</ref><sp/>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__sub_alpha2_1ga996b7cbab9689ba24980590d140ef7de" kindref="member">JogadorAtual</ref><sp/>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__sub_alpha2_1ga5ba7758412b57f34f490ee46645e98cf" kindref="member">obter_subcoordenadas</ref><sp/>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jogada,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jogador,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>info);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__sub_alpha2_1ga8c8c063a176d50b62eed70a24b79197d" kindref="member">NumJogadas</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/><ref refid="group__sub_alpha2_1ga86f898b1ea1b15a6353dd16e9e6d78cb" kindref="member">obter_ultimajogada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/><ref refid="group__sub_alpha2_1gaa1acb9ab56a9997c82130721e58192ca" kindref="member">obter_coordenada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jogada,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jogador);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_C_ACESSAR_ESTADO_H</highlight></codeline>
+    </programlisting>
+    <location file="LA1PL2G01/projeto/dados/acessar_estado.h"/>
+  </compounddef>
+</doxygen>

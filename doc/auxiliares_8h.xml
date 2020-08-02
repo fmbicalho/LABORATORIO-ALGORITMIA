@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="auxiliares_8h" kind="file" language="C++">
+    <compoundname>auxiliares.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includes local="yes">Camadas/dados/dados.h</includes>
+    <includes local="yes">Camadas/dados/modificar_estado.h</includes>
+    <includes local="yes">Camadas/dados/acessar_estado.h</includes>
+    <includes refid="logica_8h" local="yes">logica.h</includes>
+    <includedby refid="auxiliares_8c" local="yes">LA1PL2G01/projeto/logica/auxiliares.c</includedby>
+    <includedby refid="logica_8h" local="yes">LA1PL2G01/projeto/logica/logica.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>Camadas/dados/acessar_estado.h</label>
+      </node>
+      <node id="10">
+        <label>Camadas/interface/interface.h</label>
+      </node>
+      <node id="4">
+        <label>Camadas/dados/modificar_estado.h</label>
+      </node>
+      <node id="6">
+        <label>logica.h</label>
+        <link refid="logica_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>time.h</label>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+      <node id="1">
+        <label>LA1PL2G01/projeto/logica/auxiliares.h</label>
+        <link refid="auxiliares_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Camadas/dados/dados.h</label>
+      </node>
+      <node id="11">
+        <label>Camadas/interface/io.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>LA1PL2G01/projeto/logica/logica.c</label>
+        <link refid="logica_8c"/>
+      </node>
+      <node id="3">
+        <label>LA1PL2G01/projeto/logica/logica.h</label>
+        <link refid="logica_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LA1PL2G01/projeto/logica/auxiliares.c</label>
+        <link refid="auxiliares_8c"/>
+      </node>
+      <node id="1">
+        <label>LA1PL2G01/projeto/logica/auxiliares.h</label>
+        <link refid="auxiliares_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__sub2_alpha2_1ga6d18e8736a024c1ed08ce90900fcdf36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_linha</definition>
+        <argsstring>(ESTADO *e, int linha, const char *line)</argsstring>
+        <name>ler_linha</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Recebe uma string e lê cada caractere, para armazenar no tab. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o número da linha lida </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é a linha lida </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/logica/auxiliares.h" line="17" column="6" bodyfile="LA1PL2G01/bot/auxiliaresBot.c" bodystart="6" bodyend="11" declfile="LA1PL2G01/projeto/logica/auxiliares.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub2_alpha2_1ga7a58dae24162814a0972c47febd9be69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_jogada</definition>
+        <argsstring>(ESTADO *e, JOGADA jog, int numjog)</argsstring>
+        <name>ler_jogada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_j_o_g_a_d_a" kindref="compound">JOGADA</ref></type>
+          <declname>jog</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numjog</declname>
+        </param>
+        <briefdescription>
+<para>Lê uma jogada, para armazenar na lista de jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é a jogada lida </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numjog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o número da jogada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/logica/auxiliares.h" line="24" column="6" bodyfile="LA1PL2G01/bot/auxiliaresBot.c" bodystart="13" bodyend="15" declfile="LA1PL2G01/projeto/logica/auxiliares.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub2_alpha2_1ga5431e0cd098dba18d4a02e7be69808a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_restante</definition>
+        <argsstring>(ESTADO *e, int jogadas, COORDENADA c)</argsstring>
+        <name>ler_restante</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jogadas</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Lê as restantes informações para serem armazenadas (número de jogadas, jogador atual e última jogada). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jogadas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o número de jogadas individuais lidas </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é a última jogada lida </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/logica/auxiliares.h" line="31" column="6" bodyfile="LA1PL2G01/bot/auxiliaresBot.c" bodystart="17" bodyend="21" declfile="LA1PL2G01/projeto/logica/auxiliares.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub2_alpha2_1ga2ee045374bae731d9f870cc7af3fbdfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int coord_to_int</definition>
+        <argsstring>(COORDENADA c)</argsstring>
+        <name>coord_to_int</name>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Converte uma coordenada em um número inteiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é a coordenada a ser convertida </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>o inteiro igual a 10*c.linha + c.coluna </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/logica/auxiliares.h" line="37" column="5" bodyfile="LA1PL2G01/bot/auxiliaresBot.c" bodystart="23" bodyend="27" declfile="LA1PL2G01/projeto/logica/auxiliares.h" declline="37" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub2_alpha2_1ga82a76985bb1f38602fa46ca450a2ec40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA int_to_coord</definition>
+        <argsstring>(int x)</argsstring>
+        <name>int_to_coord</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Converte um número inteiro em uma coordenada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o número a ser convertido </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a coordenada correspondente </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/logica/auxiliares.h" line="43" column="12" bodyfile="LA1PL2G01/bot/auxiliaresBot.c" bodystart="29" bodyend="34" declfile="LA1PL2G01/projeto/logica/auxiliares.h" declline="43" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub2_alpha2_1ga5e60f2c9b94bab3f57c83c2635cf7c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int avaliar_vitoria</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>avaliar_vitoria</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Avalia a vitória em relação ao jogador atual. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se o jogador atual é o ganhador; -1 se o jogador atual é o perdedor; 0 se o jogo ainda não acabou. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/logica/auxiliares.h" line="49" column="5" bodyfile="LA1PL2G01/bot/auxiliaresBot.c" bodystart="36" bodyend="41" declfile="LA1PL2G01/projeto/logica/auxiliares.h" declline="49" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub2_alpha2_1ga6c309b38237d3442ab40beb24315af56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int array_jogadaspossiveis</definition>
+        <argsstring>(ESTADO *e, COORDENADA c, COORDENADA moveList[])</argsstring>
+        <name>array_jogadaspossiveis</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>moveList</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Constroi um array com todas as jogadas válidas possíveis no atual momento. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é a última jogada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>moveList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o array onde serão colocadas as jogadas possíveis </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>o número total de jogadas válidas possíveis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/logica/auxiliares.h" line="57" column="5" bodyfile="LA1PL2G01/bot/auxiliaresBot.c" bodystart="43" bodyend="57" declfile="LA1PL2G01/projeto/logica/auxiliares.h" declline="57" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__sub2_alpha2_1ga8b30ef7dcb6d352d3c9f7e6db25f0203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA maisproximaFim</definition>
+        <argsstring>(ESTADO *e, COORDENADA moveList[], int moveCount)</argsstring>
+        <name>maisproximaFim</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>moveList</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>moveCount</declname>
+        </param>
+        <briefdescription>
+<para>Procura dentro do array dado a coordenada mais próxima à casa final do jogador atual. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o estado do tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>moveList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o array de jogadas possíveis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>moveCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o tamanho do array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a coordenada mais próxima à casa final do jogador atual </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LA1PL2G01/projeto/logica/auxiliares.h" line="65" column="12" bodyfile="LA1PL2G01/bot/auxiliaresBot.c" bodystart="59" bodyend="72" declfile="LA1PL2G01/projeto/logica/auxiliares.h" declline="65" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contém comentários para documentação e declarações das funções em <ref refid="auxiliares_8c" kindref="compound">auxiliares.c</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RASTROS_AUXILIARES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RASTROS_AUXILIARES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camadas/dados/dados.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camadas/dados/modificar_estado.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Camadas/dados/acessar_estado.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logica_8h" kindref="compound">logica.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__sub2_alpha2_1ga6d18e8736a024c1ed08ce90900fcdf36" kindref="member">ler_linha</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*line);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__sub2_alpha2_1ga7a58dae24162814a0972c47febd9be69" kindref="member">ler_jogada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_j_o_g_a_d_a" kindref="compound">JOGADA</ref><sp/><ref refid="group___modulo_logica_1ga9dfbc982d23a619e36575d8e7ec8e41c" kindref="member">jog</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numjog);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__sub2_alpha2_1ga5431e0cd098dba18d4a02e7be69808a2" kindref="member">ler_restante</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jogadas,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__sub2_alpha2_1ga2ee045374bae731d9f870cc7af3fbdfa" kindref="member">coord_to_int</ref>(<ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/><ref refid="group__sub2_alpha2_1ga82a76985bb1f38602fa46ca450a2ec40" kindref="member">int_to_coord</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__sub2_alpha2_1ga5e60f2c9b94bab3f57c83c2635cf7c1c" kindref="member">avaliar_vitoria</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__sub2_alpha2_1ga6c309b38237d3442ab40beb24315af56" kindref="member">array_jogadaspossiveis</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>moveList[]);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/><ref refid="group__sub2_alpha2_1ga8b30ef7dcb6d352d3c9f7e6db25f0203" kindref="member">maisproximaFim</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>moveList[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>moveCount);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//RASTROS_AUXILIARES_H</highlight></codeline>
+    </programlisting>
+    <location file="LA1PL2G01/projeto/logica/auxiliares.h"/>
+  </compounddef>
+</doxygen>
